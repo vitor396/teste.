@@ -6,6 +6,18 @@ body {
   padding: 0;
 }
 
+@media (max-width:768px) {
+  .container {
+    width:90%;
+  }
+}
+
+@media (max-width:768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 header {
   background: #f4bcbc;
   padding: 20px;
