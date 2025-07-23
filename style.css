@@ -1,0 +1,160 @@
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+body {
+  background: #Fff;
+  color: #000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #f4bcbc;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav a.active {
+  border-bottom: 2px solid black;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f4e4ca;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
+}
+
+.container h1, .container h2 {
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(90, 90, 90, 0.63);
+  border-radius: 40px;
+  padding: 20px;
+  color: black;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-box input::placeholder {
+  color: rgb(201, 201, 201);
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 25%;
+  font-size: 20px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #fff;
+}
+
+
+nav ul li a:hover {
+  color: hsl(350, 100%, 82%); /* cor ao passar o mouse (dourado) */
+  background-color: rgba(255, 255, 255, 0.1); /* opcional: fundo levemente diferente */
+  border-radius: 5px;
+}
+
+.navbar {
+  background-color: #f4bcbc;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 120px;
+  margin-right: 15px;
+  filter: brightness(1.2) contrast(1.2); /* Aumenta brilho e contraste */
+  padding-left: 30px;
+}
+
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  margin: 0;
+  margin-left: 15px; /* Levemente para a direita */
+}
+
+.menu li {
+  transition: transform 0.3s ease;
+}
+
+.menu li:hover {
+  transform: scale(1.1);
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 20px;            /* Aumenta o tamanho da letra */
+  font-weight: bold;          /* Deixa em negrito */
+  color: #222;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #fff0f0;  /* Cor suave de fundo */
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #ffbaba;
+  color: white;
+}
+

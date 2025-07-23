@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .form-agendamento {
+      max-width: 500px;
+      margin: 60px auto;
+      background: #f4e4ca;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .form-agendamento h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .form-agendamento label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .form-agendamento input,
+    .form-agendamento select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+      font-size: 16px;
+    }
+
+    .form-agendamento button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #000;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .form-agendamento button:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <div class="navbar">
+  <img src="teste1.png" alt="Logo" class="logo" style="height: 120px; margin-right: 15px;">
+  <h1>Studio MARCELA DUTRA <br />BROWS & LASHES</h1>
+  <ul class="menu">
+    <li><a href="index.html" class="active">Início</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="agendamento.html">Agendamento</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</div>
+</header>
+
+  <main>
+    <form class="form-agendamento">
+      <h2>Agende Seu Horário</h2>
+
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="servico">Serviço:</label>
+      <select id="servico" name="servico" required>
+        <option value="">Selecione...</option>
+        <option value="classico">Corte Clássico</option>
+        <option value="contemporaneo">Corte Contemporâneo</option>
+        <option value="barba">Barba Completa</option>
+      </select>
+
+      <label for="barbeiro">Barbeiro:</label>
+      <select id="barbeiro" name="barbeiro" required>
+        <option value="">Escolha um barbeiro...</option>
+        <option value="Will">Will</option>
+        <option value="Keivin">Keivin</option>
+      </select>
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <button type="submit">Confirmar Agendamento</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Studio Marcella Dutra<br /> BROWS & LASHES</p>
+  </footer>
+</body>
+</html>
